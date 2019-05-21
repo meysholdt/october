@@ -10,8 +10,8 @@ return [
     'disableCoreUpdates' => env('CMS_DISABLE_CORE_UPDATES', true),
     'backendTimezone' => env('TZ', 'UTC'),
     'backendSkin' => env('CMS_BACKEND_SKIN', 'Backend\Skins\Standard'),
-    'linkPolicy' => env('CMS_LINK_POLICY', 'secure'),
-    'backendForceSecure' => env('CMS_BACKEND_FORCE_SECURE', true),
+    'linkPolicy' => env('CMS_LINK_POLICY', 'detect'),
+    'backendForceSecure' => env('CMS_BACKEND_FORCE_SECURE', false),
     'defaultMask' => [
         'file' => env('CMS_DEFAULT_MASK_FILE', '664'),
         'folder' =>  env('CMS_DEFAULT_MASK_FOLDER', '775'),
